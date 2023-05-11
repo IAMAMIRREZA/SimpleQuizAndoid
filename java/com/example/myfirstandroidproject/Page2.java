@@ -27,9 +27,9 @@ public class Page2 extends AppCompatActivity {
                 int FalseAnswer=0;
                 int NumberOfTests=0;
                 NumberOfTests++;
+                Toast.makeText(Page2.this, "جواب شما ثبت شد", Toast.LENGTH_SHORT).show();
                 if (rbutton.isChecked()) {
                     ++TrueAnswer;
-                    Toast.makeText(Page2.this, "درسته", Toast.LENGTH_SHORT).show();
                     Intent intentok=new Intent (Page2.this,Page3.class);
                     intentok.putExtra("true answer",TrueAnswer);
                     intentok.putExtra("false answer",FalseAnswer);
@@ -38,7 +38,6 @@ public class Page2 extends AppCompatActivity {
 
                 }   else {
                     ++FalseAnswer;
-         //           Toast.makeText(Page2.this, "سوال به این راحتی اشتباه نوشتی!!!", Toast.LENGTH_SHORT).show();
                     Intent intentfalse=new Intent (Page2.this,Page3.class);
                     intentfalse.putExtra("false answer",FalseAnswer);
                     intentfalse.putExtra("true answer",TrueAnswer);

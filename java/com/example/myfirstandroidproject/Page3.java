@@ -27,10 +27,10 @@ public class Page3 extends AppCompatActivity {
                 int TrueAnswer=recieve.getIntExtra("true answer",0);
                 int FalseAnswer=recieve.getIntExtra("false answer",0);
                 int NumberOfTests=recieve.getIntExtra("tests number",0);
+                Toast.makeText(Page3.this, "جواب شما ثبت شد", Toast.LENGTH_SHORT).show();
                 NumberOfTests++;
                 if (rbutton.isChecked()) {
                     ++TrueAnswer;
-                    //Toast.makeText(Page3.this, "درسته", Toast.LENGTH_SHORT).show();
                     Intent intentok=new Intent (Page3.this,Page4.class);
                     intentok.putExtra("true answer",TrueAnswer);
                     intentok.putExtra("false answer",FalseAnswer);
@@ -44,7 +44,6 @@ public class Page3 extends AppCompatActivity {
 
                 } else {
                     ++FalseAnswer;
-                //    Toast.makeText(Page3.this, "سوال به این راحتی اشتباه نوشتی!!!", Toast.LENGTH_LONG).show();
                     Intent intentfalse=new Intent (Page3.this,Page4.class);
                     intentfalse.putExtra("false answer",FalseAnswer);
                     intentfalse.putExtra("true answer",TrueAnswer);
