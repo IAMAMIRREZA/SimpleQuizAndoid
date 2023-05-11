@@ -27,7 +27,7 @@ public class Page3 extends AppCompatActivity {
                 int TrueAnswer=recieve.getIntExtra("true answer",0);
                 int FalseAnswer=recieve.getIntExtra("false answer",0);
                 int NumberOfTests=recieve.getIntExtra("tests number",0);
-                Toast.makeText(Page3.this, "جواب شما ثبت شد", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Page3.this, "جواب شما با موفقیت ثبت شد", Toast.LENGTH_SHORT).show();
                 NumberOfTests++;
                 if (rbutton.isChecked()) {
                     ++TrueAnswer;
