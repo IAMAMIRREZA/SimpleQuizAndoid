@@ -27,7 +27,7 @@ public class Page2 extends AppCompatActivity {
                 int FalseAnswer=0;
                 int NumberOfTests=0;
                 NumberOfTests++;
-                Toast.makeText(Page2.this, "جواب شما ثبت شد", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Page2.this, "جواب شما با موفقیت ثبت شد", Toast.LENGTH_SHORT).show();
                 if (rbutton.isChecked()) {
                     ++TrueAnswer;
                     Intent intentok=new Intent (Page2.this,Page3.class);
